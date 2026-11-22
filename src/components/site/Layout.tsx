@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { Menu, Phone, X } from "lucide-react";
-import { Logo } from "./Logo";
+import { FullLogo, Logo } from "./Logo";
 import { useSiteSettings } from "@/hooks/useContent";
 import { buttonClass } from "@/components/ui/button";
 import { captureAttribution, cn, telHref } from "@/lib/utils";
@@ -76,9 +76,7 @@ export function Layout() {
       <footer className="border-t border-ink-line">
         <div className="container flex flex-wrap justify-between gap-8 py-10 text-sm text-bone-dim">
           <div className="flex flex-col gap-1.5">
-            <span className="font-display text-xl font-bold text-bone">
-              BRING ’EM <span className="text-brand">IN</span> INVESTIGATIONS
-            </span>
+            <FullLogo className="mb-2 h-auto w-44" />
             {s.license_number && <span>Texas PI License #{s.license_number}</span>}
             <span>{s.service_area}</span>
             <a href={telHref(s.phone)} className="text-bone no-underline">{s.phone}</a>
