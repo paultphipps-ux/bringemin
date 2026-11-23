@@ -1,0 +1,5 @@
+{
+  "_comment": "Public Supabase settings (Project Settings > API). The anon key is meant to be public; row-level security protects the data. VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY env vars override these.",
+  "url": "https://YOUR-PROJECT.supabase.co",
+  "anonKey": "YOUR-ANON-KEY"
+}
