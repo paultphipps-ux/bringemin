@@ -30,7 +30,7 @@ export function SkipForm() {
   if (state === "sent") {
     return (
       <div role="status" className="rounded-xl border border-ink-edge bg-ink-3 p-7">
-        <h2 className="font-display text-2xl font-semibold">Skip received.</h2>
+        <h2 className="font-display text-xl font-extrabold uppercase tracking-tight">Skip received.</h2>
         <p className="mt-2 text-bone-muted">We'll call you to confirm the details and get started.</p>
       </div>
     );
@@ -38,7 +38,7 @@ export function SkipForm() {
 
   return (
     <form onSubmit={onSubmit} aria-labelledby="skipform" className="flex flex-col gap-3.5 rounded-xl border border-ink-edge bg-ink-3 p-7">
-      <h2 id="skipform" className="font-display text-3xl font-semibold">Submit a skip</h2>
+      <h2 id="skipform" className="font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight">Submit a skip</h2>
       <p className="-mt-1 text-sm text-bone-dim">Sent securely to our recovery team. We call you back to confirm.</p>
       <div className="grid gap-3.5 sm:grid-cols-2">
         <Field label="Bond company" name="bond_company" required maxLength={200} />

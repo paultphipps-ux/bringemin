@@ -27,7 +27,7 @@ export default function Attorneys() {
       </Section>
       <section id="consult" className="bg-ink-2">
         <div className="container grid gap-12 py-16 md:grid-cols-2">
-          <h2 className="font-display text-4xl font-semibold">Discuss a case</h2>
+          <h2 className="font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight">Discuss a case</h2>
           <ConsultForm defaultCaseType="Attorney / litigation support" />
         </div>
       </section>

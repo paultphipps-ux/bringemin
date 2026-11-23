@@ -31,10 +31,10 @@ export function Layout() {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-black">
         Skip to content
       </a>
-      <header className="sticky top-0 z-40 border-b border-ink-line bg-ink/95 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-ink-line border-t-[3px] border-t-brand bg-ink/95 backdrop-blur">
         <div className="container flex items-center justify-between gap-4 py-4">
           <Logo />
-          <nav aria-label="Main" className="hidden items-center gap-6 text-[15px] font-medium lg:flex">
+          <nav aria-label="Main" className="hidden items-center gap-6 font-display text-[13px] font-bold uppercase tracking-[0.08em] lg:flex">
             {NAV.map((n) => (
               <NavLink key={n.to} to={n.to} className={({ isActive }) => cn("no-underline hover:text-brand-text", isActive && "text-brand-text")}>
                 {n.label}
@@ -60,7 +60,7 @@ export function Layout() {
           <nav aria-label="Mobile" className="border-t border-ink-line lg:hidden">
             <div className="container flex flex-col py-2">
               {NAV.map((n) => (
-                <NavLink key={n.to} to={n.to} className="py-3 text-lg no-underline">
+                <NavLink key={n.to} to={n.to} className="py-3 font-display text-base font-bold uppercase tracking-wide no-underline">
                   {n.label}
                 </NavLink>
               ))}

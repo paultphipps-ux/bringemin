@@ -33,7 +33,7 @@ export default function ServiceDetail() {
             )}
             {faqs.length > 0 && (
               <div>
-                <h2 className="mb-2 font-display text-3xl font-semibold">Common questions</h2>
+                <h2 className="mb-2 font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight">Common questions</h2>
                 <FaqList faqs={faqs} />
               </div>
             )}

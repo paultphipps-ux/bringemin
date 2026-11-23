@@ -32,6 +32,7 @@ export default function Home() {
     <>
       <Seo jsonLd={jsonLd} />
       <Hero
+        art
         section={sections["home.hero"]}
         fallback={{
           eyebrow: "Licensed Texas private investigators · Dallas–Fort Worth",
@@ -54,8 +55,8 @@ export default function Home() {
       <Section title="Who we work for" id="who">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {AUDIENCES.map((a) => (
-            <Link key={a.title} to={a.to} className="flex flex-col gap-2.5 rounded-xl border border-ink-edge bg-ink-3 p-7 no-underline hover:border-[#55555C]">
-              <span className="font-display text-2xl font-semibold text-bone">{a.title}</span>
+            <Link key={a.title} to={a.to} className="flex flex-col gap-2.5 rounded-lg border border-ink-edge border-t-brand border-t-2 bg-ink-3 p-7 no-underline hover:border-steel-dark hover:border-t-brand">
+              <span className="font-display text-xl font-extrabold uppercase tracking-tight text-bone">{a.title}</span>
               <span className="text-[15px] text-bone-muted">{a.desc}</span>
               <span className="mt-auto text-[15px] font-semibold text-brand-text">{a.cta} →</span>
             </Link>
@@ -74,7 +75,7 @@ export default function Home() {
       <Section alt id="about" labelledBy="about-h">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="flex flex-col gap-4">
-            <h2 id="about-h" className="font-display text-4xl font-semibold">{about?.heading ?? "Who we are"}</h2>
+            <h2 id="about-h" className="font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight">{about?.heading ?? "Who we are"}</h2>
             {about?.body && <p className="whitespace-pre-line text-bone-muted">{about.body}</p>}
             <Link to={about?.cta_href ?? "/about"} className="font-semibold text-brand-text no-underline">{about?.cta_label ?? "Meet the team"} →</Link>
           </div>
@@ -106,7 +107,7 @@ export default function Home() {
       <section id="contact" aria-labelledby="contact-h" className="bg-ink-2">
         <div className="container grid gap-12 py-16 md:grid-cols-2 md:py-20">
           <div className="flex flex-col gap-4">
-            <h2 id="contact-h" className="font-display text-4xl font-semibold">{contact?.heading ?? "Free confidential consultation"}</h2>
+            <h2 id="contact-h" className="font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight">{contact?.heading ?? "Free confidential consultation"}</h2>
             {contact?.body && <p className="text-bone-muted">{contact.body}</p>}
             <a href={telHref(s.phone)} className="font-display text-3xl font-semibold no-underline">{s.phone}</a>
             <p className="text-[15px] text-bone-dim">{[s.hours, s.service_area].filter(Boolean).join(" · ")}</p>

@@ -35,7 +35,7 @@ export function ConsultForm({ defaultCaseType = "" }: { defaultCaseType?: string
   if (state === "sent") {
     return (
       <div role="status" className="rounded-xl border border-ink-edge bg-ink-3 p-7">
-        <h3 className="font-display text-2xl font-semibold">Thank you. We got your message.</h3>
+        <h3 className="font-display text-xl font-extrabold uppercase tracking-tight">Thank you. We got your message.</h3>
         <p className="mt-2 text-bone-muted">An investigator will contact you shortly, the way you asked. If it's urgent, call us now.</p>
       </div>
     );

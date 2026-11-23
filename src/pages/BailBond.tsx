@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import { FaqList, Section, Steps } from "@/components/site/blocks";
+import { FaqList, Section, Steps, Eyebrow } from "@/components/site/blocks";
 import { SkipForm } from "@/components/site/SkipForm";
 import { Seo } from "@/components/site/Seo";
 import { useFaqs, useSections, useSiteSettings } from "@/hooks/useContent";
@@ -24,11 +24,11 @@ export default function BailBond() {
         title="Fugitive Recovery & Skip Tracing for Bail Bond Companies"
         description="Licensed Texas investigators handling skip tracing and fugitive recovery for bail bond companies across Dallas–Fort Worth. Submit a skip online or call 24/7."
       />
-      <section className="border-b border-ink-line">
+      <section className="border-b border-ink-line bg-[radial-gradient(ellipse_at_80%_10%,rgba(193,1,2,0.14),transparent_55%)]">
         <div className="container grid items-start gap-12 py-20 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.2em] text-brand-text">{hero?.eyebrow ?? "For bail bond companies"}</p>
-            <h1 className="font-display text-[clamp(40px,6vw,68px)] font-bold leading-[1.04]">{hero?.heading ?? "Your defendant skipped. We bring 'em in."}</h1>
+            <Eyebrow>{hero?.eyebrow ?? "For bail bond companies"}</Eyebrow>
+            <h1 className="font-display text-[clamp(36px,5.6vw,64px)] font-black uppercase leading-[1.02] tracking-tight">{hero?.heading ?? "Your defendant skipped. We bring 'em in."}</h1>
             <p className="text-[19px] text-bone-muted">{hero?.body ?? "Licensed Texas investigators handling skip tracing and fugitive recovery across Dallas–Fort Worth, so you don't forfeit the bond."}</p>
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               {[
@@ -56,7 +56,7 @@ export default function BailBond() {
 
       <section className="bg-brand">
         <div className="container flex flex-wrap items-center justify-between gap-6 py-14">
-          <h2 className="font-display text-4xl font-bold text-white">Got a skip right now? Call us.</h2>
+          <h2 className="font-display text-[clamp(26px,4vw,38px)] font-extrabold uppercase tracking-tight text-white">Got a skip right now? Call us.</h2>
           <a href={telHref(s.phone)} className="rounded-md bg-ink px-7 py-4 text-xl font-semibold text-white no-underline">{s.phone}</a>
         </div>
       </section>

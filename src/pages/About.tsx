@@ -18,7 +18,7 @@ export default function About() {
               ) : (
                 <div className="flex aspect-[4/5] items-center justify-center rounded-xl border border-dashed border-[#44444B] bg-[#1E1E22] text-sm text-bone-dim">Photo coming soon</div>
               )}
-              <h3 className="font-display text-2xl font-semibold">{m.name}</h3>
+              <h3 className="font-display text-xl font-extrabold uppercase tracking-tight">{m.name}</h3>
               {m.title && <p className="text-bone-dim">{m.title}</p>}
               {m.license_number && <p className="text-sm text-bone-dim">Texas PI License #{m.license_number}</p>}
               {m.bio && <p className="whitespace-pre-line text-bone-muted">{m.bio}</p>}

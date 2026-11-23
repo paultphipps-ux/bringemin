@@ -5,7 +5,7 @@ type Variant = "primary" | "outline" | "ghost" | "light" | "danger";
 
 const variants: Record<Variant, string> = {
   primary: "bg-brand text-white hover:bg-brand-hover",
-  outline: "border border-[#55555C] text-bone hover:border-bone",
+  outline: "border-2 border-steel-dark text-bone hover:border-bone",
   ghost: "text-current hover:bg-black/5",
   light: "border border-paper-line bg-white text-[#1D1D20] hover:bg-paper",
   danger: "border border-red-200 bg-white text-red-700 hover:bg-red-50",
@@ -17,7 +17,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const buttonClass = (variant: Variant = "primary", extra?: string) =>
   cn(
-    "inline-flex min-h-[44px] items-center justify-center gap-2 rounded-md px-5 py-2.5 font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60",
+    "inline-flex min-h-[44px] items-center justify-center gap-2 rounded px-5 py-2.5 font-display text-[15px] font-bold uppercase tracking-wide transition-colors disabled:cursor-not-allowed disabled:opacity-60",
     variants[variant],
     extra,
   );
