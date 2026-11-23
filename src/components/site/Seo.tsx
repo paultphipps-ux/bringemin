@@ -15,7 +15,7 @@ interface Props {
 export function Seo({ title, description, image, type = "website", jsonLd }: Props) {
   const s = useSiteSettings();
   const { pathname } = useLocation();
-  const fullTitle = title ? `${title} | ${s.business_name}` : s.default_seo_title ?? s.business_name;
+  const fullTitle = title ? (title.includes(s.business_name) ? title : `${title} | ${s.business_name}`) : s.default_seo_title ?? s.business_name;
   const desc = description ?? s.default_seo_description ?? "";
   const url = SITE + pathname;
   return (

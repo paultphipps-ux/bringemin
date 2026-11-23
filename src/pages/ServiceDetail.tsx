@@ -27,7 +27,7 @@ export default function ServiceDetail() {
           <div className="flex flex-col gap-8">
             {service.image_url && <img src={service.image_url} alt="" className="w-full rounded-xl object-cover" />}
             {service.body ? (
-              <article className="prose prose-invert prose-lg max-w-none prose-a:text-brand-text" dangerouslySetInnerHTML={safeHtml(service.body)} />
+              <article className="prose prose-invert prose-lg max-w-none prose-a:text-brand-text prose-headings:font-display prose-headings:font-extrabold prose-headings:uppercase prose-headings:tracking-tight prose-li:marker:text-brand" dangerouslySetInnerHTML={safeHtml(service.body)} />
             ) : (
               <p className="text-bone-muted">More details coming soon. Call or send a confidential message to talk about your situation.</p>
             )}
