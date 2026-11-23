@@ -55,3 +55,9 @@ insert into public.categories (name, slug) values
 ('Bail recovery', 'bail-recovery'), ('Background investigations', 'background-investigations'), ('Debt recovery', 'debt-recovery'),
 ('Divorce & infidelity', 'divorce'), ('Family law', 'family-law'), ('Financial investigations', 'financial'),
 ('Mobile forensics', 'mobile-forensics'), ('Surveillance', 'surveillance'), ('Business', 'business'), ('Legal', 'legal'), ('Private investigators', 'private-investigators');
+
+-- Testimonials from the old site (recovered from the Wayback Machine). Editable or hideable in /admin/testimonials.
+insert into public.testimonials (quote, author, audience, sort, published) values
+('Bring Em In Investigations exceeded my expectations when I needed to conduct a background check for a potential business partner. They provided comprehensive and timely information that allowed me to make an informed decision. Their expertise is unmatched, and I wouldn''t hesitate to use their services again.', 'Michael S.', 'business', 0, true),
+('When I suspected infidelity in my marriage, I turned to Bring Em In Investigations for help. They handled my case with compassion and sensitivity while maintaining the highest level of professionalism. The evidence they provided was invaluable during a difficult time in my life. I can''t thank them enough.', 'Emily K.', 'individual', 1, true),
+('I had the pleasure of working with Bring Em In Investigations on a corporate matter, and I was thoroughly impressed by their commitment to excellence. Their team''s ability to uncover crucial information saved our company from a potential disaster. I highly recommend their corporate investigation services.', 'Mark T.', 'business', 2, true);
