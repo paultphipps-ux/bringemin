@@ -45,7 +45,7 @@ export default function Home() {
           <CtaLink to="/bail-bond-agents" variant="outline">Submit a skip</CtaLink>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-3 pt-2 text-sm text-bone-dim">
-          {s.license_number && <span>Texas PI License #{s.license_number}</span>}
+          {s.license_number && <span>Texas DPS License #{s.license_number}</span>}
           <span>Court-admissible reports</span>
           {s.hours && <span>{s.hours}</span>}
           <span>100% confidential</span>

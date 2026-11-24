@@ -1,14 +1,29 @@
 import { Hero, Section } from "@/components/site/blocks";
 import { Seo } from "@/components/site/Seo";
-import { useSections, useTeam } from "@/hooks/useContent";
+import { useSections, useSiteSettings, useTeam } from "@/hooks/useContent";
 
 export default function About() {
   const { sections } = useSections("about");
   const { data: team = [] } = useTeam();
+  const s = useSiteSettings();
   return (
     <>
       <Seo title="About Our Licensed Private Investigators" description="Meet the licensed Texas private investigators behind Bring 'Em In Investigations in Dallas." />
       <Hero section={sections["about.intro"]} fallback={{ eyebrow: "About us", heading: "Licensed. Discreet. Relentless." }} />
+      {s.license_number && (
+        <Section title="Licensed by the State of Texas" alt>
+          <div className="flex max-w-3xl flex-col gap-3 text-bone-muted">
+            <p>
+              Bring Em In Investigations, LLC is licensed by the Texas Department of Public Safety as a
+              private investigation company, investigations/security contractor and guard company.
+            </p>
+            <p className="font-display text-2xl font-extrabold text-bone">License #{s.license_number}</p>
+            <a href="https://www.dps.texas.gov" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-text no-underline">
+              Texas Department of Public Safety →
+            </a>
+          </div>
+        </Section>
+      )}
       <Section title="The team">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {team.map((m) => (

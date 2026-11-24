@@ -49,11 +49,11 @@ WordPress-style: drafts with autosave, scheduled publishing (a post goes live wh
 
 1. Supabase project created, migration and seed run, `supabase.config.json` filled in, first admin created.
 2. Connect the repo in Lovable and publish; check a few pages (`/services/surveillance`, `/about`) with "view source" to confirm the prerendered text is there.
-3. Confirm the phone number in Site settings ((214) 537-0191 on the old site vs (817) 933-7144), and the license numbers.
+3. Confirm the phone number in Site settings ((214) 537-0191 on the old site vs (817) 933-7144). Company license C28384101 (Texas DPS, expires 07/31/2027) is already set; renew before it expires.
 4. Point bringemininvestigations.com at the Lovable site and confirm SSL.
 5. Test a few old URLs (for example `/skiptrace/`, `/about-us/`) redirect correctly; add Cloudflare redirects if the host doesn't send 301s.
 6. Verify Google Search Console, submit `/sitemap.xml`, and update the website link on the Google Business Profile.
 
 ## Content still needed from the client
 
-Anything shown in `[brackets]` in the seed data is a placeholder: PI license numbers, co-founder name and bios, photos, bail recovery fees and response times, counties served, and the privacy policy text.
+Anything shown in `[brackets]` in the seed data is a placeholder: co-founder name and bios, photos, bail recovery fees and response times, counties served, and the privacy policy text.

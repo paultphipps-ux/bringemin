@@ -6,7 +6,7 @@ import type {
 
 const FALLBACK_SETTINGS: SiteSettings = {
   id: 1, business_name: "Bring 'Em In Investigations", phone: "(817) 933-7144", email: null,
-  license_number: null, hours: "Available 24/7", service_area: "Dallas, Fort Worth and North Texas", address: null,
+  license_number: "C28384101", hours: "Available 24/7", service_area: "Dallas, Fort Worth and North Texas", address: null,
   facebook_url: null, instagram_url: null, linkedin_url: null, google_business_url: null,
   default_seo_title: null, default_seo_description: null, updated_at: "",
 };

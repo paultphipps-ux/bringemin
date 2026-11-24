@@ -77,7 +77,7 @@ export function Layout() {
         <div className="container flex flex-wrap justify-between gap-8 py-10 text-sm text-bone-dim">
           <div className="flex flex-col gap-1.5">
             <FullLogo className="mb-2 h-auto w-44" />
-            {s.license_number && <span>Texas PI License #{s.license_number}</span>}
+            {s.license_number && <span>Texas DPS License #{s.license_number}</span>}
             <span>{s.service_area}</span>
             <a href={telHref(s.phone)} className="text-bone no-underline">{s.phone}</a>
             {s.email && <a href={`mailto:${s.email}`} className="text-bone no-underline">{s.email}</a>}

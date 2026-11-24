@@ -11,7 +11,7 @@ const FIELDS: { key: keyof SiteSettings; label: string; area?: boolean; hint?: s
   { key: "business_name", label: "Business name" },
   { key: "phone", label: "Phone" },
   { key: "email", label: "Public email" },
-  { key: "license_number", label: "Texas PI license number", hint: "Shown in the header area, footer and bail bond page." },
+  { key: "license_number", label: "Texas DPS company license number", hint: "Shown in the footer, home page, bail bond page, about page and contact page." },
   { key: "hours", label: "Hours" },
   { key: "service_area", label: "Service area" },
   { key: "address", label: "Address (optional)", area: true },

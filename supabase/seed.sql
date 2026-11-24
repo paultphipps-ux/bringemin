@@ -2,7 +2,7 @@
 -- Anything in [brackets] is a placeholder the client must replace from /admin.
 
 update public.site_settings set
-  license_number = '[LICENSE #]',
+  license_number = 'C28384101',
   default_seo_title = 'Bring ''Em In Investigations | Licensed Private Investigators in Dallas, TX',
   default_seo_description = 'Licensed Texas private investigators in Dallas–Fort Worth: fugitive recovery and skip tracing for bail bond companies, litigation support for attorneys, and discreet investigations for families and businesses.'
 where id = 1;
@@ -49,7 +49,7 @@ insert into public.faqs (question, answer, page, sort) values
 ('How fast do you start on a skip?', '[Answer: e.g. same day for skips submitted before X pm.]', 'bail', 0),
 ('What do you charge for recovery?', '[Answer: fee structure and when it is due.]', 'bail', 1),
 ('Which counties do you cover?', '[Answer: Dallas, Tarrant, Collin, Denton… statewide by arrangement?]', 'bail', 2),
-('Are you licensed for bail recovery in Texas?', 'Yes. Our investigators hold Texas private investigator licenses.', 'bail', 3);
+('Are you licensed for bail recovery in Texas?', 'Yes. Bring Em In Investigations, LLC is licensed by the Texas Department of Public Safety as a private investigation company, investigations/security contractor and guard company (license C28384101).', 'bail', 3);
 
 insert into public.categories (name, slug) values
 ('Bail recovery', 'bail-recovery'), ('Background investigations', 'background-investigations'), ('Debt recovery', 'debt-recovery'),
