@@ -25,7 +25,7 @@ WordPress-style: drafts with autosave, scheduled publishing (a post goes live wh
 ## Setup
 
 1. Create a Supabase project.
-2. Run the migration and seed, either with the Supabase CLI (`supabase link` then `supabase db push` and `psql … -f supabase/seed.sql`) or by pasting `supabase/migrations/20261122000000_init.sql` and then `supabase/seed.sql` into the SQL editor.
+2. Run the migration and seed, either with the Supabase CLI (`supabase link` then `supabase db push` and `psql … -f supabase/seed.sql`) or by pasting each file in `supabase/migrations/` in name order, then `supabase/seed.sql`, into the SQL editor.
 3. Put the project URL and anon key (Project Settings › API) in `supabase.config.json`. The anon key is meant to be public; row-level security protects the data. Locally you can use `.env` instead (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`), which overrides the file.
 4. `npm install && npm run dev`.
 5. Create the first admin: in Supabase, Authentication › Users › Add user (or invite), then in the SQL editor:
