@@ -35,7 +35,7 @@ export default function Home() {
         art
         section={sections["home.hero"]}
         fallback={{
-          eyebrow: "Licensed Texas private investigators · Dallas–Fort Worth",
+          eyebrow: "Licensed & insured Texas private investigators · Dallas–Fort Worth",
           heading: "We find people. We find the truth. We bring 'em in.",
           body: "Fugitive recovery for bail bond companies, court-ready evidence for attorneys, and discreet investigations for families and businesses across North Texas.",
         }}
@@ -45,6 +45,7 @@ export default function Home() {
           <CtaLink to="/bail-bond-agents" variant="outline">Submit a skip</CtaLink>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-3 pt-2 text-sm text-bone-dim">
+          {s.insured && <span>Licensed &amp; insured</span>}
           {s.license_number && <span>Texas DPS License #{s.license_number}</span>}
           <span>Court-admissible reports</span>
           {s.hours && <span>{s.hours}</span>}

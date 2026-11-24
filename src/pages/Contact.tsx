@@ -18,7 +18,9 @@ export default function Contact() {
             {s.email && <a href={`mailto:${s.email}`} className="no-underline">{s.email}</a>}
             <p className="text-bone-dim">{[s.hours, s.service_area].filter(Boolean).join(" · ")}</p>
             {s.address && <p className="whitespace-pre-line text-bone-dim">{s.address}</p>}
-            {s.license_number && <p className="text-sm text-bone-dim">Licensed by Texas DPS · License #{s.license_number}</p>}
+            {(s.insured || s.license_number) && (
+              <p className="text-sm text-bone-dim">{[s.insured ? "Licensed & insured" : null, s.license_number ? `Texas DPS License #${s.license_number}` : null].filter(Boolean).join(" · ")}</p>
+            )}
           </div>
           <ConsultForm />
         </div>

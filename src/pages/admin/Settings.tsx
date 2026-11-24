@@ -58,6 +58,10 @@ export default function Settings() {
             <Field key={f.key} tone="light" label={f.label} hint={f.hint} value={(s[f.key] as string) ?? ""} onChange={(e) => setS({ ...s, [f.key]: e.target.value || null })} />
           ),
         )}
+        <label className="flex min-h-[44px] items-center gap-3 font-medium">
+          <input type="checkbox" className="h-5 w-5 accent-brand" checked={s.insured} onChange={(e) => setS({ ...s, insured: e.target.checked })} />
+          Show "Licensed &amp; insured" on the site
+        </label>
         <Button type="submit" className="self-start" disabled={save.isPending}>{save.isPending ? "Saving…" : "Save settings"}</Button>
       </form>
     </>

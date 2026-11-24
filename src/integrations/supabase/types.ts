@@ -24,7 +24,7 @@ export interface SkipSubmission {
 }
 
 export interface SiteSettings {
-  id: 1; business_name: string; phone: string; email: string | null; license_number: string | null;
+  id: 1; business_name: string; phone: string; email: string | null; license_number: string | null; insured: boolean;
   hours: string | null; service_area: string | null; address: string | null;
   facebook_url: string | null; instagram_url: string | null; linkedin_url: string | null; google_business_url: string | null;
   default_seo_title: string | null; default_seo_description: string | null; updated_at: string;

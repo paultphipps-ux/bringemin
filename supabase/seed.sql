@@ -4,11 +4,11 @@
 update public.site_settings set
   license_number = 'C28384101',
   default_seo_title = 'Bring ''Em In Investigations | Licensed Private Investigators in Dallas, TX',
-  default_seo_description = 'Licensed Texas private investigators in Dallas–Fort Worth: fugitive recovery and skip tracing for bail bond companies, litigation support for attorneys, and discreet investigations for families and businesses.'
+  default_seo_description = 'Licensed and insured Texas private investigators in Dallas–Fort Worth: fugitive recovery and skip tracing for bail bond companies, litigation support for attorneys, and discreet investigations for families and businesses.'
 where id = 1;
 
 insert into public.page_sections (key, page, label, eyebrow, heading, body, cta_label, cta_href, sort) values
-('home.hero', 'home', 'Home: hero', 'Licensed Texas private investigators · Dallas–Fort Worth', 'We find people. We find the truth. We bring ''em in.', 'Fugitive recovery for bail bond companies, court-ready evidence for attorneys, and discreet investigations for families and businesses across North Texas.', 'Free confidential consultation', '/contact', 0),
+('home.hero', 'home', 'Home: hero', 'Licensed & insured Texas private investigators · Dallas–Fort Worth', 'We find people. We find the truth. We bring ''em in.', 'Fugitive recovery for bail bond companies, court-ready evidence for attorneys, and discreet investigations for families and businesses across North Texas.', 'Free confidential consultation', '/contact', 0),
 ('home.about', 'home', 'Home: who we are', null, 'Who we are', 'Bring ''Em In Investigations is a licensed Texas private investigation agency founded by Lidio Ortiz and [CO-FOUNDER NAME]. [X] years of combined experience in [BACKGROUND].', 'Meet the team', '/about', 1),
 ('home.contact', 'home', 'Home: consultation', null, 'Free confidential consultation', 'Tell us a little about your situation. Only our investigators see your message, and we contact you the way you choose.', null, null, 2),
 ('bail.hero', 'bail', 'Bail bond agents: hero', 'For bail bond companies', 'Your defendant skipped. We bring ''em in.', 'Licensed Texas investigators handling skip tracing and fugitive recovery across Dallas–Fort Worth, so you don''t forfeit the bond.', null, null, 0),

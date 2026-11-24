@@ -10,7 +10,7 @@ const SITE = "https://bringemininvestigations.com";
 const BRAND = "Bring 'Em In Investigations";
 const DEFAULT_TITLE = `${BRAND} | Licensed Private Investigators in Dallas, TX`;
 const DEFAULT_DESC =
-  "Licensed Texas private investigators in Dallas–Fort Worth: fugitive recovery and skip tracing for bail bond companies, litigation support for attorneys, and discreet investigations for families and businesses.";
+  "Licensed and insured Texas private investigators in Dallas–Fort Worth: fugitive recovery and skip tracing for bail bond companies, litigation support for attorneys, and discreet investigations for families and businesses.";
 
 // Keep in step with the <Seo> props in src/pages.
 const STATIC = [

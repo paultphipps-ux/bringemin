@@ -32,7 +32,7 @@ export default function BailBond() {
             <p className="text-[19px] text-bone-muted">{hero?.body ?? "Licensed Texas investigators handling skip tracing and fugitive recovery across Dallas–Fort Worth, so you don't forfeit the bond."}</p>
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               {[
-                s.license_number ? `Licensed by Texas DPS, #${s.license_number}` : "Licensed Texas private investigators",
+                `${s.insured ? "Licensed & insured" : "Licensed"}${s.license_number ? `, Texas DPS License #${s.license_number}` : " Texas private investigators"}`,
                 "Status updates on every case until the defendant is located or recovered",
                 s.service_area ? `Serving ${s.service_area}` : "Serving Dallas–Fort Worth",
               ].map((t) => (
